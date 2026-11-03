@@ -577,7 +577,7 @@ em { font-style: italic; font-weight: 500; color: var(--teal); }
 .info__link { font-weight: 600; color: var(--teal-dark); }
 .info__link:hover { text-decoration: underline; text-underline-offset: 3px; }
 
-.hours { display: grid; grid-template-columns: 1fr 1fr; column-gap: 32px; }
+.hours { display: grid; max-width: 460px; }
 .hours li { display: flex; justify-content: space-between; gap: 16px; padding: 7px 0; border-bottom: 1px dashed var(--line); font-size: 15px; }
 .hours span { font-weight: 600; }
 .hours .is-today { color: var(--teal-dark); }
@@ -620,7 +620,7 @@ em { font-style: italic; font-weight: 500; color: var(--teal); }
 }
 @media (max-width: 540px) {
   .place__info { padding: 24px; }
-  .info, .hours { grid-template-columns: 1fr; }
+  .info { grid-template-columns: 1fr; }
   .place__actions .btn { flex: 1; }
 }
 
