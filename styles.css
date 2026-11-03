@@ -265,7 +265,7 @@ em { font-style: italic; font-weight: 500; color: var(--teal); }
 .portrait__card--name { left: -28px; bottom: 44px; flex-direction: column; align-items: flex-start; gap: 2px; }
 .portrait__card--name strong { font-size: 16.5px; }
 .portrait__card--name span { color: var(--muted); }
-.portrait__card--rdv { right: -24px; top: 22%; font-weight: 600; }
+.portrait__card--rdv { right: -28px; bottom: 150px; font-weight: 600; }
 .portrait__card--rdv small { font-weight: 500; font-size: 12.5px; color: var(--muted); }
 
 .live { flex: none; width: 10px; height: 10px; border-radius: 50%; background: #2fa36b; animation: live 2.4s infinite; }
@@ -282,7 +282,7 @@ em { font-style: italic; font-weight: 500; color: var(--teal); }
 @media (max-width: 560px) {
   .hero__ctas .btn { width: 100%; }
   .portrait__card--name { left: 12px; bottom: 16px; }
-  .portrait__card--rdv { right: 12px; top: 16px; }
+  .portrait__card--rdv { right: 12px; bottom: 96px; }
 }
 
 /* ---------- Approche ---------- */
