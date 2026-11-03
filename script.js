@@ -3,7 +3,7 @@
 // ——— Configuration du site ———
 const CONFIG = {
   // Page Doctolib de Noha Dehhan (lien validé)
-  doctolibUrl: "https://www.doctolib.fr/pedicure-podologue/paris/noha-dehhan",
+  doctolibUrl: "https://www.doctolib.fr/pedicure-podologue/paris/noha-dehhan-cergy",
 };
 
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -19,6 +19,9 @@ document.querySelectorAll("[data-doctolib]").forEach((link) => {
 document.querySelectorAll("[data-year]").forEach((el) => {
   el.textContent = new Date().getFullYear();
 });
+
+// Met en avant le jour actuel dans les horaires (la liste commence le lundi)
+document.querySelectorAll(".hours li")[(new Date().getDay() + 6) % 7]?.classList.add("is-today");
 
 // ——— Navigation ———
 const nav = document.getElementById("nav");

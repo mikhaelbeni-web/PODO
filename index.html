@@ -21,7 +21,7 @@
   <script>document.documentElement.classList.add("js")</script>
   <script src="script.js" defer></script>
 
-  <!-- Données structurées pour Google : adresse, téléphone et URL à compléter -->
+  <!-- Données structurées pour Google -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -33,12 +33,14 @@
     "description": "Cabinet de pédicurie-podologie à Paris : soins, bilan podologique, semelles orthopédiques sur mesure, podologie du sport et de l’enfant, pied diabétique.",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "À COMPLÉTER",
-      "postalCode": "750XX",
+      "streetAddress": "12 rue de Phalsbourg",
+      "postalCode": "75017",
       "addressLocality": "Paris",
       "addressCountry": "FR"
     },
-    "telephone": "À COMPLÉTER",
+    "telephone": "+33767830524",
+    "openingHours": ["Mo 09:00-13:00", "Mo 14:00-19:00", "Tu 09:00-15:30", "We 12:00-20:30", "Th 09:00-15:30", "Fr 09:00-14:00", "Su 11:00-18:00"],
+    "paymentAccepted": "Chèque, espèces, virement bancaire",
     "areaServed": "Paris"
   }
   </script>
@@ -54,6 +56,7 @@
         <span class="wordmark__role">Pédicure-Podologue · Paris</span>
       </a>
       <nav class="nav__links" aria-label="Navigation principale">
+        <a href="#apropos">À propos</a>
         <a href="#soins">Soins</a>
         <a href="#douleurs">Vos douleurs</a>
         <a href="#bilan">Le bilan</a>
@@ -68,6 +71,7 @@
     </div>
     <div class="nav__mobile" id="menu-mobile" hidden>
       <nav class="wrap" aria-label="Navigation mobile">
+        <a href="#apropos">À propos</a>
         <a href="#soins">Soins</a>
         <a href="#douleurs">Vos douleurs</a>
         <a href="#bilan">Le bilan</a>
@@ -85,11 +89,11 @@
     <section class="hero" id="top">
       <div class="wrap hero__inner">
         <div class="hero__copy">
-          <p class="badge reveal"><span class="badge__dot"></span>Pédicure-Podologue diplômée d’État · Paris</p>
+          <p class="badge reveal"><span class="badge__dot"></span>Pédicure-Podologue diplômée d’État · Paris 17e</p>
           <h1 class="reveal" style="--d:.06s">Prenez vos pieds <em>en main.</em></h1>
           <p class="lead reveal" style="--d:.12s">
-            Noha Dehhan vous accueille dans son cabinet parisien pour des soins de pédicurie, des bilans podologiques
-            et des semelles orthopédiques sur mesure. Une prise en charge complète du pied, de l’enfant au sportif.
+            Noha Dehhan vous accueille au cabinet Paris Monceau, dans le 17e, pour des soins de pédicurie, des bilans
+            podologiques et des semelles orthopédiques sur mesure. Une prise en charge complète du pied, de l’enfant au sportif.
           </p>
           <div class="hero__ctas reveal" style="--d:.18s">
             <a class="btn btn--primary btn--lg" data-doctolib href="https://www.doctolib.fr/">
@@ -109,7 +113,7 @@
             </li>
             <li>
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7" /></svg>
-              Patients diabétiques
+              Conventionnée · carte Vitale
             </li>
           </ul>
         </div>
@@ -145,6 +149,50 @@
         <div class="value reveal" style="--d:.12s">
           <span class="value__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h4l2-5 4 10 2-5h4" /></svg></span>
           <div><h2>Suivi</h2><p>Des conseils concrets et un contrôle régulier pour des résultats qui durent.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== À propos ===== -->
+    <section class="section section--sand" id="apropos">
+      <div class="wrap about">
+        <div class="about__intro reveal">
+          <p class="kicker">À propos</p>
+          <h2>Noha Dehhan, pédicure-podologue diplômée d’État.</h2>
+          <p class="section__lead">
+            Diplômée de l’Université Paris Cité, Noha Dehhan exerce en cabinet libéral et a travaillé auprès de publics très variés&nbsp;:
+            personnes âgées en EHPAD, patients de clinique en orthopédie, oncologie et neurologie, jeunes adultes en institut médico-éducatif.
+            Une expérience qui nourrit une prise en charge attentive et adaptée à chacun.
+          </p>
+          <p class="about__langs">Consultations en français et en anglais.</p>
+        </div>
+
+        <div class="about__cols reveal" style="--d:.08s">
+          <div class="about__block">
+            <h3>Diplôme</h3>
+            <ul class="timeline">
+              <li><span>2024</span>Diplôme d’État de pédicure-podologue · Université Paris Cité</li>
+            </ul>
+          </div>
+          <div class="about__block">
+            <h3>Formations complémentaires</h3>
+            <ul class="timeline">
+              <li><span>2025</span>Bilan diagnostique et prise en charge du sportif en podologie</li>
+              <li><span>2025</span>Le patient âgé souffrant d’arthrose</li>
+              <li><span>2025</span>Repérage de l’obésité</li>
+              <li><span>2024</span>Prise en charge de la douleur</li>
+            </ul>
+          </div>
+          <div class="about__block">
+            <h3>Expérience</h3>
+            <ul class="timeline">
+              <li><span>Depuis 2024</span>Cabinets à Paris et Villiers-le-Bel</li>
+              <li><span>Depuis 2024</span>Institut médico-éducatif · jeunes adultes</li>
+              <li><span>2024 – 2025</span>Cabinets à Suresnes et Cergy</li>
+              <li><span>2024 – 2025</span>EHPAD · gériatrie</li>
+              <li><span>2024 – 2025</span>Clinique · orthopédie, oncologie, neurologie</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -425,23 +473,26 @@
           <p class="kicker">Tarifs &amp; remboursement</p>
           <h2>Des tarifs clairs, annoncés à l’avance.</h2>
           <p class="section__lead">
-            Tarifs indicatifs. Le motif et le tarif de chaque consultation sont précisés lors de la réservation sur Doctolib.
+            Tarifs pratiqués au cabinet, identiques à ceux affichés sur Doctolib.
           </p>
         </header>
 
         <div class="pricing">
-          <!-- À VALIDER avec Noha Dehhan : tous les tarifs ci-dessous sont des exemples -->
           <ul class="price-list reveal">
-            <li class="price"><div><h3>Soin de pédicurie</h3><p>Cors, durillons, ongles, crevasses</p></div><span class="price__v">50 €</span></li>
-            <li class="price"><div><h3>Ongle incarné</h3><p>Soin de l’ongle incarné</p></div><span class="price__v"><small>dès</small>55 €</span></li>
-            <li class="price"><div><h3>Orthonyxie</h3><p>Pose d’une orthèse d’ongle</p></div><span class="price__v"><small>dès</small>60 €</span></li>
-            <li class="price"><div><h3>Bilan podologique</h3><p>Examen statique et dynamique</p></div><span class="price__v">60 €</span></li>
-            <li class="price"><div><h3>Bilan + semelles sur mesure</h3><p>La paire, bilan compris</p></div><span class="price__v"><small>dès</small>190 €</span></li>
-            <li class="price"><div><h3>Orthoplastie</h3><p>Orthèse d’orteil en silicone</p></div><span class="price__v"><small>dès</small>45 €</span></li>
-            <li class="price"><div><h3>Patient diabétique, grade 2 ou 3</h3><p>Séance de prévention sur prescription</p></div><span class="price__v price__v--care">Pris en charge</span></li>
+            <li class="price"><div><h3>Consultation</h3><p>Consultation podologique</p></div><span class="price__v">60 €</span></li>
+            <li class="price"><div><h3>Soin de pédicurie</h3><p>Cors, durillons, ongles, crevasses</p></div><span class="price__v">60 €</span></li>
+            <li class="price"><div><h3>Bilan podologique</h3><p>Examen statique et dynamique, analyse de la marche</p></div><span class="price__v">70 €</span></li>
+            <li class="price"><div><h3>Semelles orthopédiques</h3><p>Conçues sur mesure</p></div><span class="price__v">180 €</span></li>
+            <li class="price"><div><h3>Verrue plantaire</h3><p>Traitement de la verrue uniquement</p></div><span class="price__v">30 €</span></li>
+            <li class="price"><div><h3>Orthoplastie · Orthonyxie</h3><p>Orthèse d’orteil ou d’ongle</p></div><span class="price__v">40 à 50 €</span></li>
           </ul>
 
-          <aside class="refund reveal" style="--d:.08s" aria-label="Remboursement">
+          <aside class="refund reveal" style="--d:.08s" aria-label="Paiement et remboursement">
+            <div class="refund__item refund__item--pay">
+              <h3>Paiement</h3>
+              <p>Chèque, espèces ou virement bancaire. <strong>Carte bancaire non acceptée.</strong></p>
+              <p>Praticienne conventionnée · carte Vitale acceptée · tiers payant Sécurité sociale.</p>
+            </div>
             <div class="refund__item">
               <h3>Soins de pédicurie</h3>
               <p>Non remboursés par l’Assurance Maladie. De nombreuses mutuelles proposent un forfait podologie&nbsp;: renseignez-vous auprès de la vôtre.</p>
@@ -464,7 +515,7 @@
       <div class="wrap">
         <header class="section__head reveal">
           <p class="kicker">Le cabinet</p>
-          <h2>Votre cabinet de podologie à Paris.</h2>
+          <h2>Le cabinet Paris Monceau, dans le 17e.</h2>
           <p class="section__lead">
             Consultations uniquement sur rendez-vous. Les créneaux disponibles sont mis à jour en temps réel sur Doctolib.
           </p>
@@ -475,32 +526,39 @@
             <dl class="info">
               <div>
                 <dt>Adresse</dt>
-                <dd><span class="todo">[Adresse du cabinet]</span><br>750<span class="todo">XX</span> Paris</dd>
-              </div>
-              <div>
-                <dt>Accès</dt>
-                <dd>Métro <span class="todo">[ligne · station]</span></dd>
-              </div>
-              <div>
-                <dt>Horaires</dt>
-                <dd>Sur rendez-vous<br>Créneaux en temps réel sur Doctolib</dd>
+                <dd>Cabinet Paris Monceau<br>12 rue de Phalsbourg<br>75017 Paris</dd>
               </div>
               <div>
                 <dt>Téléphone</dt>
-                <dd><span class="todo">[01 XX XX XX XX]</span></dd>
+                <dd><a class="info__link" href="tel:+33767830524">07 67 83 05 24</a></dd>
+              </div>
+              <div>
+                <dt>Accès</dt>
+                <dd>Métro Malesherbes (ligne 3)<br>RER C Pereire–Levallois<br>Bus 94 · Place du Général Catroux<br>Parking public&nbsp;: 14 avenue de Villiers</dd>
               </div>
               <div>
                 <dt>Accessibilité</dt>
-                <dd><span class="todo">[Accès PMR à confirmer]</span></dd>
+                <dd>Cabinet en rez-de-chaussée<br>Consultations en français et en anglais</dd>
               </div>
-              <div>
-                <dt>Rendez-vous</dt>
-                <dd>En ligne sur Doctolib, confirmation et rappel automatiques</dd>
+              <div class="info__wide">
+                <dt>Horaires</dt>
+                <dd>
+                  <ul class="hours">
+                    <li><span>Lundi</span>9h00 – 13h00 · 14h00 – 19h00</li>
+                    <li><span>Mardi</span>9h00 – 15h30</li>
+                    <li><span>Mercredi</span>12h00 – 20h30</li>
+                    <li><span>Jeudi</span>9h00 – 15h30</li>
+                    <li><span>Vendredi</span>9h00 – 14h00</li>
+                    <li><span>Samedi</span>Fermé</li>
+                    <li><span>Dimanche</span>11h00 – 18h00</li>
+                  </ul>
+                </dd>
               </div>
             </dl>
             <div class="place__actions">
               <a class="btn btn--primary" data-doctolib href="https://www.doctolib.fr/">Prendre rendez-vous</a>
-              <a class="btn btn--outline" href="https://www.google.com/maps/search/?api=1&amp;query=Noha%20Dehhan%20p%C3%A9dicure-podologue%20Paris" target="_blank" rel="noopener">Itinéraire</a>
+              <a class="btn btn--outline" href="tel:+33767830524">Appeler</a>
+              <a class="btn btn--outline" href="https://www.google.com/maps/search/?api=1&amp;query=12%20rue%20de%20Phalsbourg%2075017%20Paris" target="_blank" rel="noopener">Itinéraire</a>
             </div>
           </div>
 
@@ -516,7 +574,7 @@
             <div class="place__pin">
               <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z" /><circle cx="12" cy="9.5" r="2.5" /></svg>
             </div>
-            <p class="place__city">Paris</p>
+            <p class="place__city">Paris 17e · Monceau</p>
           </div>
         </div>
       </div>
@@ -557,6 +615,14 @@
             <p>Le soin est réalisé avec précision pour limiter l’inconfort au maximum. Si l’ongle incarné revient régulièrement, une orthonyxie peut corriger durablement sa courbure.</p>
           </details>
           <details>
+            <summary>Quels sont les moyens de paiement acceptés&nbsp;?</summary>
+            <p>Chèque, espèces ou virement bancaire&nbsp;; la carte bancaire n’est pas acceptée. Le cabinet est conventionné&nbsp;: la carte Vitale est acceptée et le tiers payant s’applique sur la part prise en charge par la Sécurité sociale.</p>
+          </details>
+          <details>
+            <summary>Les consultations sont-elles possibles en anglais&nbsp;?</summary>
+            <p>Oui, Noha Dehhan consulte en français et en anglais.</p>
+          </details>
+          <details>
             <summary>Recevez-vous les enfants&nbsp;?</summary>
             <p>Oui. Le bilan de l’enfant permet de suivre le développement du pied et de la marche, de repérer tôt certains troubles et d’adapter le chaussage à chaque âge.</p>
           </details>
@@ -585,12 +651,12 @@
           <p class="footer__name">Noha Dehhan</p>
           <p>Pédicure-Podologue diplômée d’État · Paris</p>
           <p class="footer__slogan">Prenez vos pieds en main.</p>
-          <p class="footer__small">N° RPPS <span class="todo">[à compléter]</span></p>
+          <p class="footer__small">N° RPPS 10110402863</p>
         </div>
         <div>
           <p class="footer__title">Cabinet</p>
-          <p><span class="todo">[Adresse du cabinet]</span><br>750<span class="todo">XX</span> Paris</p>
-          <p><span class="todo">[01 XX XX XX XX]</span></p>
+          <p>Cabinet Paris Monceau<br>12 rue de Phalsbourg<br>75017 Paris</p>
+          <p><a href="tel:+33767830524">07 67 83 05 24</a></p>
         </div>
         <div>
           <p class="footer__title">Liens</p>
