@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Noa Dehan · Pédicure-Podologue à Paris</title>
+  <meta name="description" content="Noa Dehan, pédicure-podologue à Paris : soins de pédicurie, ongle incarné, bilan podologique, semelles orthopédiques sur mesure, podologie du sport et de l’enfant, pied diabétique. Prise de rendez-vous en ligne sur Doctolib.">
+  <!-- Version de travail : à retirer une fois les informations du cabinet complétées -->
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#07090D">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Noa Dehan · Pédicure-Podologue à Paris">
+  <meta property="og:description" content="Soins de pédicurie, bilan podologique et semelles orthopédiques sur mesure. Rendez-vous en ligne sur Doctolib.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+  <script src="script.js" defer></script>
+
+  <!-- Données structurées pour Google : adresse, téléphone et URL à compléter -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Noa Dehan · Pédicure-Podologue",
+    "medicalSpecialty": "Podiatric",
+    "description": "Cabinet de pédicurie-podologie à Paris : soins, bilan podologique, semelles orthopédiques sur mesure, podologie du sport et de l’enfant, pied diabétique.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "À COMPLÉTER",
+      "postalCode": "750XX",
+      "addressLocality": "Paris",
+      "addressCountry": "FR"
+    },
+    "telephone": "À COMPLÉTER",
+    "areaServed": "Paris"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#contenu">Aller au contenu</a>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="#top" class="wordmark" aria-label="Noa Dehan, retour en haut de page">
+        <span class="wordmark__name">Noa Dehan</span>
+        <span class="wordmark__role">Pédicure-Podologue · Paris</span>
+      </a>
+      <nav class="nav__links" aria-label="Navigation principale">
+        <a href="#soins">Soins</a>
+        <a href="#douleurs">Vos douleurs</a>
+        <a href="#bilan">Le bilan</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#cabinet">Cabinet</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn--glow btn--sm nav__cta" data-doctolib href="https://www.doctolib.fr/">Prendre RDV</a>
+      <button class="nav__burger" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="menu-mobile" hidden>
+      <nav class="wrap" aria-label="Navigation mobile">
+        <a href="#soins">Soins</a>
+        <a href="#douleurs">Vos douleurs</a>
+        <a href="#bilan">Le bilan</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#cabinet">Cabinet</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn--glow" data-doctolib href="https://www.doctolib.fr/">Prendre rendez-vous sur Doctolib</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero dark" id="top">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="aurora"></div>
+        <div class="gridlines"></div>
+      </div>
+
+      <div class="wrap hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow reveal"><span class="pulse"></span>Cabinet de podologie · Paris</p>
+          <h1 class="reveal" style="--d:.08s">La précision au service de <span class="grad">chaque pas.</span></h1>
+          <p class="lead reveal" style="--d:.16s">
+            Noa Dehan, pédicure-podologue diplômée d’État à Paris. Soins de pédicurie, bilan podologique,
+            analyse de la marche et semelles orthopédiques sur mesure&nbsp;: une prise en charge complète du pied,
+            de l’enfant au sportif.
+          </p>
+          <div class="hero__ctas reveal" style="--d:.24s">
+            <a class="btn btn--glow btn--lg" data-doctolib href="https://www.doctolib.fr/">
+              Prendre rendez-vous
+              <span class="btn__sub">Doctolib</span>
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn--ghost btn--lg" href="#soins">Découvrir les soins</a>
+          </div>
+          <ul class="hero__chips reveal" style="--d:.32s">
+            <li>Accès direct, sans ordonnance</li>
+            <li>Semelles sur mesure</li>
+            <li>Disponibilités en temps réel</li>
+          </ul>
+        </div>
+
+        <figure class="scan reveal" style="--d:.2s">
+          <div class="scan__head">
+            <span class="mono">Analyse des appuis</span>
+            <span class="mono scan__status"><i></i>Simulation</span>
+          </div>
+          <div class="scan__stage">
+            <span class="scan__corners" aria-hidden="true"></span>
+            <canvas id="scan" role="img" aria-label="Illustration animée d’une analyse des pressions sous les deux pieds"></canvas>
+            <span class="scan__foot scan__foot--l mono" aria-hidden="true">G</span>
+            <span class="scan__foot scan__foot--r mono" aria-hidden="true">D</span>
+          </div>
+          <div class="scan__metrics">
+            <div><span class="mono">Gauche</span><strong id="m-left">50 %</strong></div>
+            <div><span class="mono">Droite</span><strong id="m-right">50 %</strong></div>
+            <div><span class="mono">Talon / avant-pied</span><strong id="m-ratio">57 / 43</strong></div>
+          </div>
+          <div class="scan__scale">
+            <span class="mono">Faible</span><span class="scan__bar"></span><span class="mono">Élevée</span>
+          </div>
+          <figcaption class="mono">Visualisation illustrative</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== Bandeau défilant ===== -->
+    <section class="ticker" aria-label="Motifs de consultation fréquents">
+      <div class="ticker__track">
+        <ul>
+          <li>Ongle incarné</li><li>Cors &amp; durillons</li><li>Semelles orthopédiques</li><li>Aponévrosite plantaire</li>
+          <li>Hallux valgus</li><li>Métatarsalgies</li><li>Névrome de Morton</li><li>Tendinite d’Achille</li>
+          <li>Pieds plats</li><li>Pied creux</li><li>Verrues plantaires</li><li>Pied diabétique</li>
+          <li>Mycoses</li><li>Crevasses</li><li>Épine calcanéenne</li><li>Podologie du sport</li><li>Podologie de l’enfant</li>
+        </ul>
+        <ul aria-hidden="true">
+          <li>Ongle incarné</li><li>Cors &amp; durillons</li><li>Semelles orthopédiques</li><li>Aponévrosite plantaire</li>
+          <li>Hallux valgus</li><li>Métatarsalgies</li><li>Névrome de Morton</li><li>Tendinite d’Achille</li>
+          <li>Pieds plats</li><li>Pied creux</li><li>Verrues plantaires</li><li>Pied diabétique</li>
+          <li>Mycoses</li><li>Crevasses</li><li>Épine calcanéenne</li><li>Podologie du sport</li><li>Podologie de l’enfant</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Soins ===== -->
+    <section class="section light" id="soins">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="kicker">01 · Soins</p>
+          <h2>Tout ce dont vos pieds ont besoin, au même endroit.</h2>
+          <p class="section__lead">
+            Du soin ponctuel au traitement de fond, chaque consultation commence par un examen attentif
+            et se termine par des conseils concrets pour votre quotidien.
+          </p>
+        </header>
+
+        <div class="cards">
+          <article class="card reveal" id="soin-pedicurie">
+            <div class="card__top"><span class="card__idx">01</span><span class="card__bar"></span></div>
+            <h3>Soins de pédicurie</h3>
+            <p>Traitement des cors, durillons, callosités et œils-de-perdrix, soin des ongles épaissis ou déformés, crevasses du talon. Un geste précis, sans douleur, avec du matériel stérilisé.</p>
+            <ul class="tags"><li>Cors</li><li>Durillons</li><li>Ongles épaissis</li><li>Crevasses</li></ul>
+          </article>
+
+          <article class="card reveal" style="--d:.06s" id="soin-ongle">
+            <div class="card__top"><span class="card__idx">02</span><span class="card__bar"></span></div>
+            <h3>Ongle incarné &amp; orthonyxie</h3>
+            <p>Soin de l’ongle incarné en douceur, puis correction progressive de sa courbure par orthonyxie (agrafe ou orthèse d’ongle) pour limiter les récidives.</p>
+            <ul class="tags"><li>Ongle incarné</li><li>Orthonyxie</li><li>Prévention des récidives</li></ul>
+          </article>
+
+          <article class="card reveal" style="--d:.12s" id="soin-bilan">
+            <div class="card__top"><span class="card__idx">03</span><span class="card__bar"></span></div>
+            <h3>Bilan podologique &amp; analyse de la marche</h3>
+            <p>Examen complet, debout et en mouvement&nbsp;: morphologie du pied, appuis, mobilité des articulations, analyse de la marche et de la posture. Le point de départ de tout traitement.</p>
+            <ul class="tags"><li>Examen statique</li><li>Analyse de la marche</li><li>Bilan postural</li></ul>
+          </article>
+
+          <article class="card reveal" id="soin-semelles">
+            <div class="card__top"><span class="card__idx">04</span><span class="card__bar"></span></div>
+            <h3>Semelles orthopédiques sur mesure</h3>
+            <p>Orthèses plantaires conçues à partir de votre bilan pour soulager les douleurs, rééquilibrer les appuis et s’adapter à vos chaussures, de la ville au sport.</p>
+            <ul class="tags"><li>Sur mesure</li><li>Chaussures de ville</li><li>Sport</li><li>Enfant</li></ul>
+          </article>
+
+          <article class="card reveal" style="--d:.06s" id="soin-sport">
+            <div class="card__top"><span class="card__idx">05</span><span class="card__bar"></span></div>
+            <h3>Podologie du sport</h3>
+            <p>Bilan du coureur et du sportif, analyse de la foulée, prévention et prise en charge des blessures&nbsp;: périostite, tendinopathie d’Achille, aponévrosite plantaire, entorses à répétition.</p>
+            <ul class="tags"><li>Running</li><li>Analyse de la foulée</li><li>Prévention</li></ul>
+          </article>
+
+          <article class="card reveal" style="--d:.12s" id="soin-enfant">
+            <div class="card__top"><span class="card__idx">06</span><span class="card__bar"></span></div>
+            <h3>Podologie de l’enfant</h3>
+            <p>Suivi du pied et de la marche pendant la croissance&nbsp;: pieds plats, marche sur la pointe ou pieds tournés vers l’intérieur, douleurs du talon (maladie de Sever), conseils de chaussage.</p>
+            <ul class="tags"><li>Pieds plats</li><li>Troubles de la marche</li><li>Croissance</li></ul>
+          </article>
+
+          <article class="card reveal" id="soin-diabete">
+            <div class="card__top"><span class="card__idx">07</span><span class="card__bar"></span></div>
+            <h3>Pied diabétique &amp; pied à risque</h3>
+            <p>Évaluation du risque podologique, soins de prévention et éducation du patient. Pour les patients diabétiques de grade 2 et 3, les séances sont prises en charge par l’Assurance Maladie sur prescription.</p>
+            <ul class="tags"><li>Gradation du risque</li><li>Prévention</li><li>Prise en charge</li></ul>
+          </article>
+
+          <article class="card reveal" style="--d:.06s" id="soin-orthoplastie">
+            <div class="card__top"><span class="card__idx">08</span><span class="card__bar"></span></div>
+            <h3>Orthoplasties</h3>
+            <p>Orthèses d’orteils en silicone moulées sur mesure pour protéger, soulager ou corriger&nbsp;: orteils en griffe ou en marteau, hallux valgus, frottements dans la chaussure.</p>
+            <ul class="tags"><li>Silicone sur mesure</li><li>Hallux valgus</li><li>Orteils en griffe</li></ul>
+          </article>
+
+          <article class="card reveal" style="--d:.12s" id="soin-verrues">
+            <div class="card__top"><span class="card__idx">09</span><span class="card__bar"></span></div>
+            <h3>Verrues &amp; mycoses</h3>
+            <p>Traitement des verrues plantaires et soins des mycoses de l’ongle et de la peau, avec un suivi régulier et des conseils pour éviter qu’elles ne reviennent.</p>
+            <ul class="tags"><li>Verrues plantaires</li><li>Mycoses des ongles</li><li>Suivi</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Vos douleurs (sélecteur par zone) ===== -->
+    <section class="section dark" id="douleurs">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="kicker">02 · Vos douleurs</p>
+          <h2>Vous avez mal où&nbsp;?</h2>
+          <p class="section__lead">
+            Choisissez une zone pour voir les problèmes les plus fréquents et la consultation adaptée.
+          </p>
+        </header>
+
+        <div class="finder reveal">
+          <div class="finder__tabs" role="tablist" aria-label="Zones douloureuses">
+            <button class="finder__tab" type="button" role="tab" id="tab-orteils" aria-controls="zone-orteils" aria-selected="true" tabindex="0"><span class="finder__idx">01</span>Ongles &amp; orteils</button>
+            <button class="finder__tab" type="button" role="tab" id="tab-avant" aria-controls="zone-avant" aria-selected="false" tabindex="-1"><span class="finder__idx">02</span>Avant-pied</button>
+            <button class="finder__tab" type="button" role="tab" id="tab-voute" aria-controls="zone-voute" aria-selected="false" tabindex="-1"><span class="finder__idx">03</span>Voûte plantaire</button>
+            <button class="finder__tab" type="button" role="tab" id="tab-talon" aria-controls="zone-talon" aria-selected="false" tabindex="-1"><span class="finder__idx">04</span>Talon</button>
+            <button class="finder__tab" type="button" role="tab" id="tab-cheville" aria-controls="zone-cheville" aria-selected="false" tabindex="-1"><span class="finder__idx">05</span>Cheville &amp; tendon</button>
+            <button class="finder__tab" type="button" role="tab" id="tab-posture" aria-controls="zone-posture" aria-selected="false" tabindex="-1"><span class="finder__idx">06</span>Genoux, hanches &amp; dos</button>
+          </div>
+
+          <div class="finder__panels">
+            <div class="finder__panel is-active" role="tabpanel" id="zone-orteils" aria-labelledby="tab-orteils" tabindex="0">
+              <h3>Ongles &amp; orteils</h3>
+              <div>
+                <p class="finder__label">Problèmes fréquents</p>
+                <ul class="finder__list">
+                  <li>Ongle incarné</li><li>Ongles épais ou déformés</li><li>Mycose de l’ongle</li>
+                  <li>Orteils en griffe ou en marteau</li><li>Cor entre les orteils (œil-de-perdrix)</li>
+                </ul>
+              </div>
+              <div>
+                <p class="finder__label">Consultation adaptée</p>
+                <ul class="finder__care">
+                  <li><a href="#soin-pedicurie">Soins de pédicurie <span>01</span></a></li>
+                  <li><a href="#soin-ongle">Ongle incarné &amp; orthonyxie <span>02</span></a></li>
+                  <li><a href="#soin-orthoplastie">Orthoplasties <span>08</span></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="finder__panel" role="tabpanel" id="zone-avant" aria-labelledby="tab-avant" tabindex="0">
+              <h3>Avant-pied</h3>
+              <div>
+                <p class="finder__label">Problèmes fréquents</p>
+                <ul class="finder__list">
+                  <li>Durillons sous le pied</li><li>Douleurs sous les orteils (métatarsalgies)</li><li>Névrome de Morton</li>
+                  <li>Hallux valgus («&nbsp;oignon&nbsp;»)</li><li>Sensation de brûlure à la marche</li>
+                </ul>
+              </div>
+              <div>
+                <p class="finder__label">Consultation adaptée</p>
+                <ul class="finder__care">
+                  <li><a href="#soin-bilan">Bilan podologique <span>03</span></a></li>
+                  <li><a href="#soin-semelles">Semelles orthopédiques <span>04</span></a></li>
+                  <li><a href="#soin-orthoplastie">Orthoplasties <span>08</span></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="finder__panel" role="tabpanel" id="zone-voute" aria-labelledby="tab-voute" tabindex="0">
+              <h3>Voûte plantaire</h3>
+              <div>
+                <p class="finder__label">Problèmes fréquents</p>
+                <ul class="finder__list">
+                  <li>Pieds plats</li><li>Pieds creux</li><li>Aponévrosite plantaire</li><li>Fatigue ou crampes à la marche</li>
+                </ul>
+              </div>
+              <div>
+                <p class="finder__label">Consultation adaptée</p>
+                <ul class="finder__care">
+                  <li><a href="#soin-bilan">Bilan &amp; analyse de la marche <span>03</span></a></li>
+                  <li><a href="#soin-semelles">Semelles orthopédiques <span>04</span></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="finder__panel" role="tabpanel" id="zone-talon" aria-labelledby="tab-talon" tabindex="0">
+              <h3>Talon</h3>
+              <div>
+                <p class="finder__label">Problèmes fréquents</p>
+                <ul class="finder__list">
+                  <li>Douleur aux premiers pas du matin (talalgie)</li><li>Épine calcanéenne</li>
+                  <li>Crevasses du talon</li><li>Maladie de Sever chez l’enfant</li>
+                </ul>
+              </div>
+              <div>
+                <p class="finder__label">Consultation adaptée</p>
+                <ul class="finder__care">
+                  <li><a href="#soin-semelles">Bilan &amp; semelles <span>04</span></a></li>
+                  <li><a href="#soin-pedicurie">Soins de pédicurie <span>01</span></a></li>
+                  <li><a href="#soin-enfant">Podologie de l’enfant <span>06</span></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="finder__panel" role="tabpanel" id="zone-cheville" aria-labelledby="tab-cheville" tabindex="0">
+              <h3>Cheville &amp; tendon d’Achille</h3>
+              <div>
+                <p class="finder__label">Problèmes fréquents</p>
+                <ul class="finder__list">
+                  <li>Tendinopathie d’Achille</li><li>Entorses à répétition</li><li>Cheville instable</li><li>Douleurs à la course</li>
+                </ul>
+              </div>
+              <div>
+                <p class="finder__label">Consultation adaptée</p>
+                <ul class="finder__care">
+                  <li><a href="#soin-sport">Podologie du sport <span>05</span></a></li>
+                  <li><a href="#soin-semelles">Semelles orthopédiques <span>04</span></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="finder__panel" role="tabpanel" id="zone-posture" aria-labelledby="tab-posture" tabindex="0">
+              <h3>Genoux, hanches &amp; dos</h3>
+              <div>
+                <p class="finder__label">Problèmes fréquents</p>
+                <ul class="finder__list">
+                  <li>Douleurs liées aux appuis</li><li>Différence de longueur des jambes</li>
+                  <li>Déséquilibre postural</li><li>Chaussures qui s’usent de travers</li>
+                </ul>
+              </div>
+              <div>
+                <p class="finder__label">Consultation adaptée</p>
+                <ul class="finder__care">
+                  <li><a href="#soin-bilan">Bilan postural <span>03</span></a></li>
+                  <li><a href="#soin-semelles">Semelles orthopédiques <span>04</span></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <p class="finder__note">Ces indications sont générales et ne remplacent pas un avis médical.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Le bilan ===== -->
+    <section class="section light" id="bilan">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="kicker">03 · Le bilan podologique</p>
+          <h2>Un protocole précis, du diagnostic à la semelle.</h2>
+          <p class="section__lead">
+            Chaque semelle est la réponse à un examen complet. Voici comment se déroule votre prise en charge.
+          </p>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__n">01</span>
+            <h3>Entretien</h3>
+            <p>Vos douleurs, vos antécédents, votre activité et vos chaussures habituelles.</p>
+          </li>
+          <li class="step reveal" style="--d:.08s">
+            <span class="step__n">02</span>
+            <h3>Examen clinique</h3>
+            <p>Morphologie du pied, empreinte des appuis, mobilité des articulations et tests musculaires.</p>
+          </li>
+          <li class="step reveal" style="--d:.16s">
+            <span class="step__n">03</span>
+            <h3>Analyse dynamique</h3>
+            <p>Observation de la marche, et de la course si besoin, pour comprendre vos appuis en mouvement.</p>
+          </li>
+          <li class="step reveal" style="--d:.24s">
+            <span class="step__n">04</span>
+            <h3>Conception</h3>
+            <p>Choix des matériaux et des corrections, fabrication de vos semelles sur mesure.</p>
+          </li>
+          <li class="step reveal" style="--d:.32s">
+            <span class="step__n">05</span>
+            <h3>Remise &amp; suivi</h3>
+            <p>Essayage, conseils pour bien s’y habituer, puis un contrôle quelques semaines plus tard.</p>
+          </li>
+        </ol>
+
+        <div class="prep reveal">
+          <p class="prep__label">À apporter</p>
+          <ul>
+            <li>Vos chaussures habituelles</li>
+            <li>Vos chaussures de sport</li>
+            <li>Vos anciennes semelles</li>
+            <li>L’ordonnance, si vous en avez une</li>
+            <li>Votre carte Vitale</li>
+            <li>Un short</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Tarifs ===== -->
+    <section class="section dark" id="tarifs">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="kicker">04 · Tarifs &amp; remboursement</p>
+          <h2>Des tarifs clairs, annoncés à l’avance.</h2>
+          <p class="section__lead">
+            Tarifs indicatifs. Le motif et le tarif de chaque consultation sont précisés lors de la réservation sur Doctolib.
+          </p>
+        </header>
+
+        <div class="pricing">
+          <!-- À VALIDER avec Noa Dehan : tous les tarifs ci-dessous sont des exemples -->
+          <ul class="price-list reveal">
+            <li class="price"><div><h3>Soin de pédicurie</h3><p>Cors, durillons, ongles, crevasses</p></div><span class="price__v">50 €</span></li>
+            <li class="price"><div><h3>Ongle incarné</h3><p>Soin de l’ongle incarné</p></div><span class="price__v"><small>dès</small>55 €</span></li>
+            <li class="price"><div><h3>Orthonyxie</h3><p>Pose d’une orthèse d’ongle</p></div><span class="price__v"><small>dès</small>60 €</span></li>
+            <li class="price"><div><h3>Bilan podologique</h3><p>Examen statique et dynamique</p></div><span class="price__v">60 €</span></li>
+            <li class="price"><div><h3>Bilan + semelles sur mesure</h3><p>La paire, bilan compris</p></div><span class="price__v"><small>dès</small>190 €</span></li>
+            <li class="price"><div><h3>Orthoplastie</h3><p>Orthèse d’orteil en silicone</p></div><span class="price__v"><small>dès</small>45 €</span></li>
+            <li class="price"><div><h3>Patient diabétique, grade 2 ou 3</h3><p>Séance de prévention sur prescription</p></div><span class="price__v price__v--care">Pris en charge</span></li>
+          </ul>
+
+          <aside class="refund reveal" style="--d:.1s" aria-label="Remboursement">
+            <div class="refund__item">
+              <h3><span class="dot"></span>Soins de pédicurie</h3>
+              <p>Non remboursés par l’Assurance Maladie. De nombreuses mutuelles proposent un forfait podologie&nbsp;: renseignez-vous auprès de la vôtre.</p>
+            </div>
+            <div class="refund__item">
+              <h3><span class="dot"></span>Semelles orthopédiques</h3>
+              <p>Remboursement partiel par l’Assurance Maladie sur prescription médicale, complété selon votre mutuelle.</p>
+            </div>
+            <div class="refund__item">
+              <h3><span class="dot"></span>Patients diabétiques</h3>
+              <p>Bilan et séances de soins de prévention pris en charge sur prescription médicale pour les grades de risque 2 et 3.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Cabinet ===== -->
+    <section class="section light" id="cabinet">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="kicker">05 · Le cabinet</p>
+          <h2>Votre cabinet de podologie à Paris.</h2>
+          <p class="section__lead">
+            Consultations uniquement sur rendez-vous. Les créneaux disponibles sont mis à jour en temps réel sur Doctolib.
+          </p>
+        </header>
+
+        <div class="place">
+          <div class="place__info reveal">
+            <dl class="info">
+              <div>
+                <dt>Adresse</dt>
+                <dd><span class="todo">[Adresse du cabinet]</span><br>750<span class="todo">XX</span> Paris</dd>
+              </div>
+              <div>
+                <dt>Accès</dt>
+                <dd>Métro <span class="todo">[ligne · station]</span></dd>
+              </div>
+              <div>
+                <dt>Horaires</dt>
+                <dd>Sur rendez-vous<br>Créneaux en temps réel sur Doctolib</dd>
+              </div>
+              <div>
+                <dt>Téléphone</dt>
+                <dd><span class="todo">[01 XX XX XX XX]</span></dd>
+              </div>
+              <div>
+                <dt>Accessibilité</dt>
+                <dd><span class="todo">[Accès PMR à confirmer]</span></dd>
+              </div>
+              <div>
+                <dt>Rendez-vous</dt>
+                <dd>En ligne sur Doctolib, confirmation et rappel automatiques</dd>
+              </div>
+            </dl>
+            <div class="place__actions">
+              <a class="btn btn--dark" data-doctolib href="https://www.doctolib.fr/">
+                Prendre rendez-vous
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a class="btn btn--line" data-maps href="https://www.google.com/maps/search/?api=1&amp;query=Noa%20Dehan%20p%C3%A9dicure-podologue%20Paris" target="_blank" rel="noopener">Itinéraire</a>
+            </div>
+          </div>
+
+          <div class="place__map reveal" style="--d:.1s" aria-hidden="true">
+            <div class="gridlines"></div>
+            <span class="ring" style="--s:120px"></span>
+            <span class="ring" style="--s:240px"></span>
+            <span class="ring" style="--s:360px"></span>
+            <span class="ring" style="--s:480px"></span>
+            <span class="sweep"></span>
+            <span class="pin"></span>
+            <span class="map__label map__label--tl">Paris · France</span>
+            <span class="map__label map__label--bl">48.8566° N · 2.3522° E</span>
+            <span class="map__label map__label--br">Cabinet Noa Dehan</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section white" id="faq">
+      <div class="wrap faq-layout">
+        <header class="faq__head reveal">
+          <p class="kicker">06 · Questions fréquentes</p>
+          <h2>Avant votre rendez-vous.</h2>
+          <p class="section__lead">Les réponses aux questions qu’on nous pose le plus souvent.</p>
+        </header>
+
+        <div class="faq reveal">
+          <details>
+            <summary>Faut-il une ordonnance pour consulter&nbsp;?</summary>
+            <p>Non, vous pouvez consulter un pédicure-podologue directement, sans ordonnance. Une prescription médicale reste utile pour le remboursement partiel des semelles orthopédiques, et elle est nécessaire pour la prise en charge des séances des patients diabétiques.</p>
+          </details>
+          <details>
+            <summary>Comment prendre, déplacer ou annuler un rendez-vous&nbsp;?</summary>
+            <p>Tout se fait sur Doctolib&nbsp;: vous voyez les créneaux disponibles en temps réel, vous recevez une confirmation puis un rappel, et vous pouvez déplacer ou annuler votre rendez-vous en quelques clics.</p>
+          </details>
+          <details>
+            <summary>Combien de temps dure un bilan podologique&nbsp;?</summary>
+            <p>Comptez généralement entre 45 minutes et 1 heure. Selon les cas, les semelles sont remises le jour même ou lors d’un second rendez-vous.</p>
+          </details>
+          <details>
+            <summary>Que dois-je apporter&nbsp;?</summary>
+            <p>Vos chaussures habituelles (ville et sport), vos anciennes semelles si vous en avez, l’ordonnance éventuelle, votre carte Vitale et un short pour faciliter l’examen.</p>
+          </details>
+          <details>
+            <summary>Combien de temps durent des semelles orthopédiques&nbsp;?</summary>
+            <p>En moyenne 1 à 2 ans chez l’adulte, selon l’usage et l’activité. Chez l’enfant, elles sont renouvelées plus souvent pour suivre la croissance du pied.</p>
+          </details>
+          <details>
+            <summary>Le soin d’un ongle incarné est-il douloureux&nbsp;?</summary>
+            <p>Le soin est réalisé avec précision pour limiter l’inconfort au maximum. Si l’ongle incarné revient régulièrement, une orthonyxie peut corriger durablement sa courbure.</p>
+          </details>
+          <details>
+            <summary>Recevez-vous les enfants&nbsp;?</summary>
+            <p>Oui. Le bilan de l’enfant permet de suivre le développement du pied et de la marche, de repérer tôt certains troubles et d’adapter le chaussage à chaque âge.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Appel à l'action final ===== -->
+    <section class="cta dark">
+      <div class="hero__bg" aria-hidden="true"><div class="aurora aurora--center"></div><div class="gridlines"></div></div>
+      <div class="wrap cta__inner reveal">
+        <p class="kicker kicker--center">Rendez-vous en ligne</p>
+        <h2>Votre prochain pas<br><span class="grad">commence ici.</span></h2>
+        <p>Créneaux en temps réel, confirmation immédiate et rappel avant votre rendez-vous.</p>
+        <a class="btn btn--glow btn--lg" data-doctolib href="https://www.doctolib.fr/">
+          Réserver sur Doctolib
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Pied de page ===== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__name">Noa Dehan</p>
+          <p>Pédicure-Podologue diplômée d’État · Paris</p>
+          <p class="footer__small">N° RPPS <span class="todo">[à compléter]</span></p>
+        </div>
+        <div>
+          <p class="footer__title">Cabinet</p>
+          <p><span class="todo">[Adresse du cabinet]</span><br>750<span class="todo">XX</span> Paris</p>
+          <p><span class="todo">[01 XX XX XX XX]</span></p>
+        </div>
+        <div>
+          <p class="footer__title">Liens</p>
+          <ul class="footer__links">
+            <li><a data-doctolib href="https://www.doctolib.fr/">Prendre rendez-vous</a></li>
+            <li><a href="#soins">Soins</a></li>
+            <li><a href="#tarifs">Tarifs</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__giant" aria-hidden="true">Noa Dehan</p>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> Noa Dehan · Pédicure-Podologue</span>
+        <span>Prise de rendez-vous via Doctolib</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Barre de réservation fixe sur mobile -->
+  <div class="mbar" id="mbar">
+    <a class="btn btn--glow" data-doctolib href="https://www.doctolib.fr/">Prendre rendez-vous · Doctolib</a>
+  </div>
+</body>
+</html>
