@@ -1,8 +1,8 @@
 /* Noha Dehhan · Pédicure-Podologue — scripts du site */
 
-// ——— Configuration à compléter avant la mise en ligne ———
+// ——— Configuration du site ———
 const CONFIG = {
-  // Lien exact de la page Doctolib de Noha Dehhan (à copier depuis la barre d'adresse sur Doctolib)
+  // Page Doctolib de Noha Dehhan (lien validé)
   doctolibUrl: "https://www.doctolib.fr/pedicure-podologue/paris/noha-dehhan",
 };
 
